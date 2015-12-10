@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class
+        name="com.aigeek.android.criminalintent.SingleFragmentActivity"
+        x="6" y="423">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.aigeek.android.criminalintent.CrimeListFragment"
+        x="162" y="356">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.aigeek.android.criminalintent.Crime"
+            endpointName="mCrimes" kind="Simple"/>
+        <Communication destinationClassName="com.aigeek.android.criminalintent.CrimeLab"/>
+    </Class>
+    <Class name="com.aigeek.android.criminalintent.CrimePagerActivity"
+        x="466" y="358">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.aigeek.android.criminalintent.Crime"
+            endpointName="mCrimes" kind="Simple"/>
+        <Communication destinationClassName="com.aigeek.android.criminalintent.CrimeLab"/>
+    </Class>
+    <Class name="com.aigeek.android.criminalintent.CrimeLab" x="118" y="155">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.aigeek.android.criminalintent.Crime"
+            endpointName="mCrimes" kind="Simple"/>
+        <Communication destinationClassName="com.aigeek.android.criminalintent.Crime"/>
+    </Class>
+    <Class name="com.aigeek.android.criminalintent.CrimeListActivity"
+        x="20" y="354">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.aigeek.android.criminalintent.SingleFragmentActivity"/>
+    </Class>
+    <Class name="com.aigeek.android.criminalintent.Crime" x="631" y="125">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.aigeek.android.criminalintent.CrimeListFragment.CrimeAdapter"
+        x="381" y="129">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.aigeek.android.criminalintent.CrimeFragment"
+        x="643" y="360">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.aigeek.android.criminalintent.Crime"
+            endpointName="mCrime" kind="Simple"/>
+        <Communication destinationClassName="com.aigeek.android.criminalintent.CrimeLab"/>
+    </Class>
+</ClassDiagram>
